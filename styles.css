@@ -19,37 +19,53 @@
     margin-bottom: 0mm;
     margin-left: 0mm;
     margin-right: 0mm;
+    background-color:azure
+}
+
+#header-background{
+    background-color: white;
 }
 
 #header {
     position: relative;
     left: 50%;
     transform:translateX(-50%);
-    background-color: aqua;
-    margin-top: -35px;
-    opacity: 0.6;
+    background-image: url('https://as1.ftcdn.net/v2/jpg/00/48/01/32/1000_F_48013231_gumGeJuQgaIuRElO1jDRBJ33FKTUekSA.jpg');
+    margin-top: -10px;
+    width: 80%;
+    height: 300px;
+    opacity: 0.7;
 }
 
 #header-1 {
     margin-bottom: 0px;
-    font-size: 50px;
+    font-size: 60px;
+    font-style: italic;
+    text-align:center;
+    margin-top: 10px;
+    line-height: 5mm;
+}
+
+#dogsOrCatsSubmit{
+    margin-right: 20px;
 }
 
 #dogsOrCatsQuestion {
     position: relative;
-    height: 500px;
-    width: 300px;
-    bottom: -150px;
-    left: 50%;
-    transform:translateX(-50%);
+    height: auto;
+    width: auto;
+    margin-right: 120px;
+    text-align: right;
+    /*left: 20%;
+    transform:translateX(-20%);*/
 }
 
 
-#footer { /*do not change*/
-    position: fixed;
-    Width: 100%;
-    bottom: 5px;
-    font-size: 10px; 
+#footer {
+    position:auto;
+    bottom:0;
+    width:100%;
+    font-size: 10px;
 }
 
 html,body{ /*do not change*/
