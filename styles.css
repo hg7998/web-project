@@ -36,9 +36,9 @@
 
 #dogsOrCatsQuestion {
     position: relative;
-    height: 500px;
+    height: 300px;
     width: 200px;
-    bottom: -200px;
+    bottom: -150px;
     left: 50%;
     transform:translateX(-50%);
 }
@@ -48,7 +48,18 @@
     bottom: 0px;
 }*/
 
+#footer {
+    position: relative;
+   /* margin-top: -100px; /* negative value of footer height */
+    height: 100px;
+    bottom: -60px;
+    font-size: 10px;
+}
+
 * {
     overflow:hidden; 
 }
 
+html,body{
+    overflow:auto;
+}
