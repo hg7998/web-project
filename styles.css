@@ -45,14 +45,14 @@
 }
 
 
-#footer {
+#footer { /*do not change*/
     position: fixed;
     Width: 100%;
-    bottom: 0;
-    font-size: 10px;
+    bottom: 5px;
+    font-size: 10px; 
 }
 
-html,body{
+html,body{ /*do not change*/
     height: 100vh;
     margin: 0;
     overflow:auto;
