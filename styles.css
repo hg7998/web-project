@@ -1,0 +1,35 @@
+.links {
+    white-space: nowrap;
+    padding-left: 100px;
+   }
+
+.links * {
+    display: inline;
+}
+
+#links {
+    display:inline-block;
+    width: 500px
+}
+
+.body {
+    margin-top: 0mm;
+    margin-bottom: 0mm;
+    margin-left: 0mm;
+    margin-right: 0mm;
+}
+
+#header {
+    background-color: aqua;
+    margin-top: 0px;
+    opacity: 0.6;
+}
+
+#header-1 {
+    font-size: 50px;
+}
+
+* {
+    overflow:hidden; 
+}
+

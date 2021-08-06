@@ -5,19 +5,25 @@
     <script src="scripts/main.js" charset="utf-8"></script>
    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
-<body>
+<body class='body'>
+    <div id=header>
     <h1 id='header-1' align='center'>A Dog's Life</h1>
-      <div>
-          <p id='randomDogFact' align='center'>Random Fact: </p>
-      </div>
-        <div>
-           <h2><a href="MoreRandomDogFacts.html">Click Here For More Random Dog Facts</a></h2>
+          <p id='randomDogFact' align='center'><br>Insert a Random Fact Here</p> 
+    </div>
+        <div class='links'>
+        <section>
+            <a href="MoreRandomDogFacts.html">Click Here For More Random Dog Facts!</a>
+            <span id='links'></span>
+            <a href="MoreRandomDogPictures.html">Click Here For More Random Dog Pictures!</a>
+        </section>
         </div>
-          <div>
-            <span>Do you prefer dogs, or cats?</span>
-            <input type='radio' name='dogsOrCats' value='Dogs' id='Dogs'/> Dogs
-            <input type='radio' name='dogsOrCats' value='Cats' id='Cats'/> Cats
+          <div id='dogsOrCatsQuestion' align='center'>
+            <span><br> Dogs or Cats?<br><br></span>
+            <input type='radio' name='dogsOrCats' value='Dogs' id='Dogs'/>Dogs
+            <input type='radio' name='dogsOrCats' value='Cats' id='Cats'/>Cats
+            <br><br>
             <button type='submit' id='dogsOrCatsSubmit'>Submit</button>
+            <br><br>
             <span id='dogsOrCats'></span>
           </div>
 </body>
