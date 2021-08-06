@@ -43,23 +43,18 @@
     transform:translateX(-50%);
 }
 
-/*#test {
-    position: relative;
-    bottom: 0px;
-}*/
-
 #footer {
-    position: relative;
-   /* margin-top: -100px; /* negative value of footer height */
-    height: 100px;
-    bottom: -60px;
+    position: fixed;
+    Width: 100%;
+    bottom: 0;
     font-size: 10px;
+    overflow: hidden;
 }
 
 * {
     overflow:hidden; 
 }
 
-html,body{
+/*html,body{
     overflow:auto;
-}
+}*/
