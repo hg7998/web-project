@@ -31,7 +31,7 @@
     position:relative;
     background-image: url('https://cdn.pixabay.com/photo/2017/12/13/16/28/animals-3017138__340.jpg');
     margin-top: -12.5%;
-    bottom: 100px;
+    bottom: 110px;
     height: 65%;
     width: 100%;
     background-size: cover;
@@ -45,7 +45,7 @@
     margin-top: 12.5%;
     /*margin-top: 0%;*/
     text-align: center;
-    top: 100px;
+    top: 110px;
     height: 10vh;
     opacity:0.8;
     background-color: black;
