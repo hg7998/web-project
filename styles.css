@@ -19,7 +19,7 @@
     margin-bottom: 0mm;
     margin-left: 0mm;
     margin-right: 0mm;
-    background-color:azure
+    background-color:lightslategray;
 }
 
 #header-background{
@@ -28,22 +28,26 @@
 
 #header {
     position: relative;
-    left: 50%;
-    transform:translateX(-50%);
-    background-image: url('https://as1.ftcdn.net/v2/jpg/00/48/01/32/1000_F_48013231_gumGeJuQgaIuRElO1jDRBJ33FKTUekSA.jpg');
-    margin-top: -10px;
-    width: 80%;
-    height: 300px;
-    opacity: 0.7;
+    background-image: url('https://cdn.pixabay.com/photo/2017/12/13/16/28/animals-3017138__340.jpg');
+    margin-top: -150px;
+    margin-left: -20px;
+    height:400px;
+    background-size: cover;
 }
 
 #header-1 {
-    margin-bottom: 0px;
-    font-size: 60px;
-    font-style: italic;
-    text-align:center;
-    margin-top: 10px;
-    line-height: 5mm;
+    font-size: 40px;
+    font-style: bold;
+    color: white;
+    margin-top: 0px;
+    margin-left: 40%;
+    margin-right: 40%;
+    text-align: center;
+    height: 205px;
+    opacity:0.85;
+    line-height: 95mm;    
+    background-color: black;
+    overflow:hidden;
 }
 
 #dogsOrCatsSubmit{
@@ -62,10 +66,11 @@
 
 
 #footer {
-    position:auto;
+    position:relative;
     bottom:0;
     width:100%;
     font-size: 10px;
+    margin-top: 25mm;
 }
 
 html,body{ /*do not change*/
