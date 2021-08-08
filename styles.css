@@ -43,36 +43,38 @@
     font-style: bold;
     color: white;
     margin-top: 12.5%;
-    /*margin-top: 0%;*/
     text-align: center;
     top: 110px;
     height: 10vh;
-    opacity:0.8;
+    opacity:0.6;
     background-color: black;
     overflow:hidden;
 }
 
-#dogsOrCatsSubmit{
-    margin-right: 20px;
+.body-text {
+    /*position: relative;*/
+    font-size: 3vh;
 }
+
 
 #dogsOrCatsQuestion {
+    /*margin-right: 10%;*/
     position: relative;
-    height: auto;
-    width: auto;
-    margin-right: 120px;
-    text-align: right;
-    /*left: 20%;
-    transform:translateX(-20%);*/
+    text-align: center;
+    margin-top: -10%;
+    margin-left: 65%;
 }
-
 
 #footer {
     position:relative;
     bottom:0;
     width:100%;
-    font-size: 10px;
-    margin-top: 25mm;
+    font-size: 2vh;
+    text-align: center;
+    margin-top: 10%;
+    background-color: black;
+    opacity: 0.8;
+    color:white;
 }
 
 html,body{ /*do not change*/
@@ -81,6 +83,11 @@ html,body{ /*do not change*/
     overflow:auto;
 }
 
+#randomDogFact {
+    text-align: left;
+    position: relative;
+    margin-left: 10%;
+}
  /** {
     overflow:auto; 
 } */
