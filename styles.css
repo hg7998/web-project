@@ -133,6 +133,7 @@ html, body{ /*do not change*/
     background-color:gray;
     border: 2px solid black;
     width: 20%;
+    margin-left: 5%;
     height: 20%;
     align-content: center;
 }
@@ -142,6 +143,7 @@ html, body{ /*do not change*/
     border: 2px solid black;
     width: 20%;
     height: 20%;
+    margin-right: 5%;
     align-content: center;
     margin-left:auto;
 }
