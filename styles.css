@@ -235,6 +235,17 @@ html, body{ /*do not change*/
     border: 2px solid black;
 }
 
+.formContainer {
+    width: 100%;
+    text-align: center;
+    font-size: 3vh;
+    background-color: '';
+    margin-top: 3%;
+    display: flexbox;
+    align-content: flex-start;
+}
+
+
  /** {
     overflow:auto; 
 } */
