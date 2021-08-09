@@ -18,19 +18,26 @@
       <li><a id='link2' href="MoreRandomDogPictures.html">Click Here For More Random Dog Pictures!</a></li>
     </ul>
   </section>
-    <p id='randomDogFact'><br>Insert a Random Fact Here asdf asdf </p>
-      <div id='dogsOrCatsQuestion'>
-          <span><br> Dogs or Cats?<br><br></span>
-          <input type='radio' name='dogsOrCats' value='Dogs' id='Dogs' />Dogs
-          <input type='radio' name='dogsOrCats' value='Cats' id='Cats' />Cats
-          <br><br>
-          <button type='submit' id='dogsOrCatsSubmit'>Submit</button>
-          <br><br>
-          <span id=dogsOrCats></span>
-      </div>
+  <div class='container'>
+    <div id=dogFactContainer>
+      <p id='randomDogFact'><br>Insert a Random Fact Here</p>
+    </div>
+    <img id='image' img src="https://random.dog/0f889a7e-562b-4824-b521-b7aaf1757b9c.jpeg">
+    <div id=questionContainer>
+      <form id='dogsOrCatsQuestion'>
+        <span><br> Dogs or Cats?<br><br></span>
+        <input type='radio' name='dogsOrCats' value='Dogs' id='Dogs' />Dogs
+        <input type='radio' name='dogsOrCats' value='Cats' id='Cats' />Cats
+        <br><br>
+        <button type='submit' id='dogsOrCatsSubmit'>Submit</button>
+        <br><br>
+        <span id=dogsOrCatsResponse></span>
+      </form>
+    </div>
+  </div>
   <div id=footerDiv>
     <footer id=footer>
-    <p>Author: Hunter Guthrie<br>hunter.guthrie.t7uy@statefarm.com</p>
+      <p>Author: Hunter Guthrie<br>hunter.guthrie.t7uy@statefarm.com</p>
     </footer>
   </div>
 </body>

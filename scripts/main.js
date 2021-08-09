@@ -1,6 +1,7 @@
 document.getElementById('dogsOrCatsSubmit').addEventListener('click', function (event) {
+    event.preventDefault();
     if (document.getElementById('Cats').checked) {
-        document.getElementById('dogsOrCats').innerText = 'Wrong choice.'
+        document.getElementById('dogsOrCatsResponse').innerText = 'Wrong choice.'
         //PLAY STEVE CARREL "NO" GIF//
 
         /*let i = 5;
@@ -17,6 +18,6 @@ document.getElementById('dogsOrCatsSubmit').addEventListener('click', function (
         }, 6000); */
     }
     else if (document.getElementById('Dogs').checked) {
-        document.getElementById('dogsOrCats').innerText = 'You made the right choice!'
+        document.getElementById('dogsOrCatsResponse').innerText = 'You made the right choice!'
     }
 });
