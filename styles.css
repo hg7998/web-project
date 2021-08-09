@@ -160,14 +160,14 @@ html, body{ /*do not change*/
 }
 
 
-#dogFactsAndPicturesHeaderContainer {
+.otherPagesHeaderContainer {
     width: 100%;
     height: auto;
     background-color: black;
     opacity: 0.8;
 }
 
-.RandomDogFactsHeader {
+.otherPagesHeader {
     text-align: center;
     font-size: 5vh;
 }
