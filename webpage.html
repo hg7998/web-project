@@ -3,7 +3,9 @@
 
 <head id=head>
   <title>The Dog Page</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src="scripts/main.js" charset="utf-8"></script>
+
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
@@ -21,9 +23,10 @@
   </section>
   <div class='container'>
     <div id=dogFactContainer>
-      <p id='randomDogFact'><br>Insert a Random Fact Here</p>
+      <br>
     </div>
-    <video controls autoplay><source src="https://random.dog/820f3c37-c5a4-491e-bdb7-e419ab3327d3.mp4" type="video/mp4"></video>
+    <div id=imageContainer>
+    </div>
     <div id=questionContainer>
       <form id='dogsOrCatsQuestion'>
         <span><br> Dogs or Cats?<br><br></span>

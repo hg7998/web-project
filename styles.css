@@ -119,14 +119,17 @@ html, body{ /*do not change*/
     display: inline-flex;
 }
 
-#image {
+#imageContainer {
     position: relative;
     text-align:center;
     font-size: 3vh;
     width: 30%;
-    background-color:gray;
     margin-left: auto;
-    border: 2px solid black;
+}
+
+img {
+    width: 100%;
+    bottom: -10px;
 }
 
 #dogFactContainer {
@@ -171,7 +174,7 @@ html, body{ /*do not change*/
 
 .otherPagesHeader {
     text-align: center;
-    font-size: 5vh;
+    font-size: 3.5vh;
 }
 
 #dogButtonContainer {
@@ -247,6 +250,9 @@ html, body{ /*do not change*/
     align-content: flex-start;
 }
 
+#video {
+    width: 100%;
+}
 
  /** {
     overflow:auto; 
