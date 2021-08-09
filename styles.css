@@ -1,7 +1,12 @@
-.nav-bar {
+.landing-nav-bar {
     position: relative;
     font-size: 3vh;
     top: -110px;
+}
+
+.otherPages-nav-bar {
+    position: relative;
+    font-size: 3vh;
 }
 
 ul {
@@ -155,7 +160,7 @@ html, body{ /*do not change*/
 }
 
 
-#dogFactsHeaderContainer {
+#dogFactsAndPicturesHeaderContainer {
     width: 100%;
     height: auto;
     background-color: black;
