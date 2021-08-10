@@ -191,12 +191,19 @@ img {
     font-size: 3vh;
 }
 
-.dogFactsAndPicturesContainer {
+.dogFactsContainer {
     display: inline-flex;
     width: 100%;
     height: auto;
     margin: auto;
-    background-color: gray;
+    text-align: center;
+}
+
+.dogPicturesContainer {
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
     text-align: center;
 }
 
@@ -227,17 +234,14 @@ img {
 
 #dogPictureOne {
     width: 33%;
-    border: 2px solid black;
 }
 
 #dogPictureTwo {
     width: 33%;
-    border: 2px solid black;
 }
 
 #dogPictureThree {
     width: 33%;
-    border: 2px solid black;
 }
 
 .formContainer {
