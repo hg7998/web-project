@@ -197,6 +197,7 @@ img {
     height: auto;
     margin: auto;
     text-align: center;
+    background-color: gray;
 }
 
 .dogPicturesContainer {

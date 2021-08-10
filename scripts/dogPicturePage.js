@@ -68,45 +68,45 @@ document.getElementById('dogFactsAndPicturesButton').addEventListener('click', f
                 document.getElementById('dogPictureTwo').appendChild(img);
             }
         })
-        .catch (function () {
-        const error = document.createElement('p');
-        error.innerText = "Sorry, there was an error loading the image."
-        document.getElementById(dogPictureTwo).appendChild(error);
-    });
+        .catch(function () {
+            const error = document.createElement('p');
+            error.innerText = "Sorry, there was an error loading the image."
+            document.getElementById(dogPictureTwo).appendChild(error);
+        });
 
-fetch(dogPictureUrl)
-    .then(function (response) {
-        if (!response.ok) {
-            throw new Error("Could not fetch image");
-        }
-        return response.json();
-    })
-    .then(function (data) {
+    fetch(dogPictureUrl)
+        .then(function (response) {
+            if (!response.ok) {
+                throw new Error("Could not fetch image");
+            }
+            return response.json();
+        })
+        .then(function (data) {
 
-        if (document.getElementById("dogPictureThree").hasChildNodes) {
-            var parentNode = document.getElementById("dogPictureThree");
-            var childNode = parentNode.firstChild;
-            parentNode.removeChild(childNode);
-        }
+            if (document.getElementById("dogPictureThree").hasChildNodes) {
+                var parentNode = document.getElementById("dogPictureThree");
+                var childNode = parentNode.firstChild;
+                parentNode.removeChild(childNode);
+            }
 
-        let imageFormat = data.url.substring(data.url.length - 4);
-        if (imageFormat === '.mp4' || imageFormat === 'webm') {
-            const video = document.createElement('video');
-            video.controls = true;
-            video.autoplay = true;
-            video.src = data.url;
-            video.setAttribute('id', 'video');
-            document.getElementById('dogPictureThree').appendChild(video);
-        }
-        else {
-            const img = document.createElement('img');
-            img.src = data.url;
-            document.getElementById('dogPictureThree').appendChild(img);
-        }
-    })
-    .catch(function () {
-        const error = document.createElement('p');
-        error.innerText = "Sorry, there was an error loading the image."
-        document.getElementById(dogPictureOne).appendChild(error);
-    });
+            let imageFormat = data.url.substring(data.url.length - 4);
+            if (imageFormat === '.mp4' || imageFormat === 'webm') {
+                const video = document.createElement('video');
+                video.controls = true;
+                video.autoplay = true;
+                video.src = data.url;
+                video.setAttribute('id', 'video');
+                document.getElementById('dogPictureThree').appendChild(video);
+            }
+            else {
+                const img = document.createElement('img');
+                img.src = data.url;
+                document.getElementById('dogPictureThree').appendChild(img);
+            }
+        })
+        .catch(function () {
+            const error = document.createElement('p');
+            error.innerText = "Sorry, there was an error loading the image."
+            document.getElementById(dogPictureOne).appendChild(error);
+        });
 });
