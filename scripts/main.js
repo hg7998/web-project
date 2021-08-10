@@ -49,29 +49,28 @@ window.onload = function () {
                 img.src = data.url;
                 document.getElementById('imageContainer').appendChild(img);
             }
-
-            fetch(factUrl)
+        })
+        .catch(function () {
+            const error = document.createElement('p');
+            error.innerText = "Sorry, there was an error loading the random fact."
+            document.getElementById('imageContainer').appendChild(error);
+        })
+            fetch(factUrl) 
                 .then(function (response) {
                     if (!response.ok) {
                         throw new Error("Could not fetch fact");
                     }
                     return response.json();
                 })
-                .then(function (data) {
-                    console.log(data);
+                .then(function (obj) {
                     const fact = document.createElement('p');
                     fact.innerText = obj.fact;
                     document.getElementById('dogFactContainer').appendChild(fact);
                 })
                 .catch(function () {
-                    const error = document.createElement('p');
-                    error.innerText = "Sorry, there was an error loading the random fact."
+                    const error = document.getElementById('error');
+                    error.innerText = "Sorry, there was an error getting the image."
                     document.getElementById('dogFactContainer').appendChild(error);
                 })
-                .catch(function () {
-                    const error = document.createElement('p');
-                    error.innerText = "Sorry, there was an error loading the image."
-                    document.getElementById('imageContainer').appendChild(error);
-                })
-        });
 };
+
