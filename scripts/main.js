@@ -1,26 +1,26 @@
 document.getElementById('dogsOrCatsSubmit').addEventListener('click', function (event) {
     event.preventDefault();
-    if (document.getElementById('Cats').checked) {
-        document.getElementById('dogsOrCatsResponse').innerText = 'Wrong choice.'
+
+    document.getElementById('dogsOrCatsResponse').innerText = 'You will be redirected shortly... '
 
         let i = 5;
-        document.getElementById('dogsOrCatsResponse').innerText = 'Wrong choice. You will be redirected shortly... ';
 
         var timer = setInterval(function () {
             if (i <= 0) {
                 clearInterval(timer);
+                if (document.getElementById('Cats').checked) {
+                    window.location.href = 'catgif.html';
+                }
+                else {
+                    window.location.href = 'doggif.html';
+                }
             }
-            document.getElementById('dogsOrCatsResponse').innerText = 'Wrong choice. You will be redirected shortly... ' + i;
+            document.getElementById('dogsOrCatsResponse').innerText = 'You will be redirected shortly... ' + i;
             i--;
         }, 1000);
 
         setTimeout(function () {
-            /*window.close();*/
         }, 6000);
-    }
-    else if (document.getElementById('Dogs').checked) {
-        document.getElementById('dogsOrCatsResponse').innerText = 'You made the right choice!'
-    }
 });
 
 let pictureUrl = "https://random.dog/woof.json";
@@ -34,6 +34,7 @@ window.onload = function () {
             }
             return response.json();
         })
+
         .then(function (data) {
             let imageFormat = data.url.substring(data.url.length - 4);
             if (imageFormat === '.mp4' || imageFormat === 'webm') {

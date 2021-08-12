@@ -76,7 +76,7 @@ document.getElementById('dogFactsAndPicturesButton').addEventListener('click', f
 
     fetch(dogPictureUrl)
         .then(function (response) {
-            if (!response.ok) {
+            if (response.ok) {
                 throw new Error("Could not fetch image");
             }
             return response.json();

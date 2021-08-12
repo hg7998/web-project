@@ -259,6 +259,24 @@ img {
     width: 100%;
 }
 
+
+#doggif {
+    background-image: url('https://media3.giphy.com/media/4Zo41lhzKt6iZ8xff9/giphy.gif?cid=790b761102db13303111a92ba6ca6f43c4c8f112c7775243&rid=giphy.gif&ct=g');
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+  }
+
+  #catgif {
+    background-image: url('https://c.tenor.com/tMRY35MWfYYAAAAM/funny-silly.gif');
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+  }
+
+  #requiredField {
+    font-size: 3vh;
+  }
+
+
  /** {
     overflow:auto; 
 } */
