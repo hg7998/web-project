@@ -1,3 +1,9 @@
+import { dogFactsArray } from './dogFacts.js';
+
+function randomIntFromInterval(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+};
+
 document.getElementById('dogsOrCatsSubmit').addEventListener('click', function (event) {
     event.preventDefault();
 
@@ -24,7 +30,6 @@ document.getElementById('dogsOrCatsSubmit').addEventListener('click', function (
 });
 
 let pictureUrl = "https://random.dog/woof.json";
-let factUrl = "https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all";
 
 window.onload = function () {
     fetch(pictureUrl)
@@ -56,22 +61,13 @@ window.onload = function () {
             error.innerText = "Sorry, there was an error loading the random fact."
             document.getElementById('imageContainer').appendChild(error);
         })
-            fetch(factUrl) 
-                .then(function (response) {
-                    if (!response.ok) {
-                        throw new Error("Could not fetch fact");
-                    }
-                    return response.json();
-                })
-                .then(function (obj) {
-                    const fact = document.createElement('p');
-                    fact.innerText = obj.fact;
-                    document.getElementById('dogFactContainer').appendChild(fact);
-                })
-                .catch(function () {
-                    const error = document.getElementById('error');
-                    error.innerText = "Sorry, there was an error getting the image."
-                    document.getElementById('dogFactContainer').appendChild(error);
-                })
+
+        let k = randomIntFromInterval(0, 434);
+        let dogFact = document.createElement('p');
+        
+        dogFact.innerText = dogFactsArray[k].fact;
+        document.getElementById('dogFactContainer').appendChild(dogFact);
+
 };
+
 

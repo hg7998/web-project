@@ -35,7 +35,7 @@ document.getElementById('dogFactsAndPicturesButton').addEventListener('click', f
         .catch(function () {
             const error = document.createElement('p');
             error.innerText = "Sorry, there was an error loading the image."
-            document.getElementById(dogPictureThree).appendChild(error);
+            document.getElementById('dogPictureOne').appendChild(error);
         });
 
     fetch(dogPictureUrl)
@@ -71,12 +71,12 @@ document.getElementById('dogFactsAndPicturesButton').addEventListener('click', f
         .catch(function () {
             const error = document.createElement('p');
             error.innerText = "Sorry, there was an error loading the image."
-            document.getElementById(dogPictureTwo).appendChild(error);
+            document.getElementById('dogPictureTwo').appendChild(error);
         });
 
-    fetch(dogPictureUrl)
+        fetch(dogPictureUrl)
         .then(function (response) {
-            if (response.ok) {
+            if (!response.ok) {
                 throw new Error("Could not fetch image");
             }
             return response.json();
@@ -107,6 +107,6 @@ document.getElementById('dogFactsAndPicturesButton').addEventListener('click', f
         .catch(function () {
             const error = document.createElement('p');
             error.innerText = "Sorry, there was an error loading the image."
-            document.getElementById(dogPictureOne).appendChild(error);
+            document.getElementById('dogPictureThree').appendChild(error);
         });
 });

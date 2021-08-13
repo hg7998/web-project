@@ -191,7 +191,7 @@ img {
     font-size: 3vh;
 }
 
-.dogFactsContainer {
+#dogFactsContainer {
     display: inline-flex;
     width: 100%;
     height: auto;
