@@ -203,7 +203,7 @@ img {
     margin: auto;
     text-align: center;
     background-color: gray;
-    font-size: 3vh;
+    font-size: 100%;
 }
 
 #dogPicturesContainer {
