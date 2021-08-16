@@ -159,9 +159,14 @@ img {
 #dogsOrCatsQuestion {
     position: relative;
     text-align:center;
-    font-size: 3vh;
+    font-size: 2.5vh;
     margin-left: auto;
 }
+
+#dogsOrCatsSubmit {
+    font-size: 2.5vh;
+}
+
 
 
 .otherPagesHeaderContainer {
