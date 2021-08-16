@@ -200,7 +200,7 @@ img {
     background-color: gray;
 }
 
-.dogPicturesContainer {
+#dogPicturesContainer {
     display: inline-flex;
     width: 100%;
     height: auto;
