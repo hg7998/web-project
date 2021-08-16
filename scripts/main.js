@@ -58,7 +58,7 @@ window.onload = function () {
         })
         .catch(function () {
             const error = document.createElement('p');
-            error.innerText = "Sorry, there was an error loading the random fact."
+            error.innerText = "Sorry, there was an error loading the image."
             document.getElementById('imageContainer').appendChild(error);
         })
 
