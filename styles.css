@@ -1,12 +1,12 @@
 .landing-nav-bar {
     position: relative;
-    font-size: 1.3vw;
+    font-size: 3vh;
     top: -110px;
 }
 
 .otherPages-nav-bar {
     position: relative;
-    font-size: 1.5vw;
+    font-size: 3vh;
 }
 
 ul {
@@ -45,7 +45,7 @@ a {
 }
 
 p {
-    font-size: 1.5vw;
+    font-size: 3vh;
 }
 
 
@@ -54,14 +54,14 @@ p {
     background-image: url('https://cdn.pixabay.com/photo/2017/12/13/16/28/animals-3017138__340.jpg');
     margin-top: -12.5%;
     bottom: 110px;
-    height: 60%;
+    height: 65%;
     width: 100%;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 #header-1 {
     position:relative;
-    font-size: 4vw;
+    font-size: 7.5vh;
     font-style: bold;
     margin-top: 12.5%;
     text-align: center;
@@ -72,9 +72,20 @@ p {
     overflow:hidden;
 }
 
+iframe {
+    position: relative;
+    text-align:center;
+    font-size: 3vh;
+    width: 30%;
+    background-color:gray;
+    margin-left: auto;
+    border: 2px solid black;
+}
+
 video {
     position: relative;
     text-align:center;
+    font-size: 3vh;
     width: 30%;
     background-color:gray;
     margin-left: auto;
@@ -98,16 +109,24 @@ html, body{ /*do not change*/
     overflow:auto;
 }
 
+.fact-text {
+    background: yellow;
+    position: relative;
+    width: 50%;
+    display: block; 
+    /*justify-content:flex-start;*/
+}
+
 .container {
     position: relative;
     width: 100%;
     display: inline-flex;
-    font-size: 1.5vw;
 }
 
 #imageContainer {
     position: relative;
     text-align:center;
+    font-size: 3vh;
     width: 30%;
     margin-left: auto;
 }
@@ -124,7 +143,6 @@ img {
     margin-left: 5%;
     height: 20%;
     align-content: center;
-    font-size: 1.5vw;
 }
 
 #questionContainer {
@@ -137,14 +155,16 @@ img {
     margin-left:auto;
 }
 
-#dogsOrCatsSubmit {
-    font-size: 1.5vw;
+#randomDogFact {
+    position: relative;
+    text-align: center;
+    font-size: 3vh;
 }
 
 #dogsOrCatsQuestion {
     position: relative;
     text-align:center;
-    font-size: 1.5vw;
+    font-size: 3vh;
     margin-left: auto;
 }
 
@@ -158,13 +178,13 @@ img {
 
 .otherPagesHeader {
     text-align: center;
-    font-size: 2vw;
+    font-size: 3.5vh;
 }
 
 #dogButtonContainer {
     position: relative;
-    width: 5%;
-    height: 5%;
+    width: 7.5%;
+    height: 7.5%;
     margin: auto;
     align-content: center;
 }
@@ -172,6 +192,7 @@ img {
 #dogFactsAndPicturesButton {
     height: 100%;
     width: 100%;
+    font-size: 3vh;
 }
 
 #dogFactsContainer {
@@ -180,7 +201,6 @@ img {
     height: auto;
     margin: auto;
     text-align: center;
-    font-size: 1.5vw;
     background-color: gray;
 }
 
@@ -232,7 +252,7 @@ img {
 .formContainer {
     width: 100%;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 3vh;
     background-color: '';
     margin-top: 3%;
     display: flexbox;
@@ -257,7 +277,7 @@ img {
   }
 
   #requiredField {
-    font-size: 1.5vw;
+    font-size: 3vh;
   }
 
 
