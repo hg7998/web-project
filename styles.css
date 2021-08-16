@@ -195,6 +195,10 @@ img {
     font-size: 2vh;
 }
 
+#factSubmitButton {
+    font-size: 2vh;
+}
+
 #dogFactsContainer {
     display: inline-flex;
     width: 100%;
