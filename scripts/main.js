@@ -9,24 +9,24 @@ document.getElementById('dogsOrCatsSubmit').addEventListener('click', function (
 
     document.getElementById('dogsOrCatsResponse').innerText = 'You will be redirected shortly... '
 
-        let i = 5;
+    let i = 5;
 
-        var timer = setInterval(function () {
-            if (i <= 0) {
-                clearInterval(timer);
-                if (document.getElementById('Cats').checked) {
-                    window.location.href = 'catgif.html';
-                }
-                else {
-                    window.location.href = 'doggif.html';
-                }
+    var timer = setInterval(function () {
+        if (i <= 0) {
+            clearInterval(timer);
+            if (document.getElementById('Cats').checked) {
+                window.location.href = 'catgif.html';
             }
-            document.getElementById('dogsOrCatsResponse').innerText = 'You will be redirected shortly... ' + i;
-            i--;
-        }, 1000);
+            else {
+                window.location.href = 'doggif.html';
+            }
+        }
+        document.getElementById('dogsOrCatsResponse').innerText = 'You will be redirected shortly... ' + i;
+        i--;
+    }, 1000);
 
-        setTimeout(function () {
-        }, 6000);
+    setTimeout(function () {
+    }, 6000);
 });
 
 let pictureUrl = "https://random.dog/woof.json";
@@ -47,7 +47,7 @@ window.onload = function () {
                 video.controls = true;
                 video.autoplay = true;
                 video.src = data.url;
-                video.setAttribute('id','video');
+                video.setAttribute('id', 'video');
                 document.getElementById('imageContainer').appendChild(video);
             }
             else {
@@ -62,11 +62,11 @@ window.onload = function () {
             document.getElementById('imageContainer').appendChild(error);
         })
 
-        let k = randomIntFromInterval(0, 434);
-        let dogFact = document.createElement('p');
-        
-        dogFact.innerText = dogFactsArray[k].fact;
-        document.getElementById('dogFactContainer').appendChild(dogFact);
+    let k = randomIntFromInterval(0, 434);
+    let dogFact = document.createElement('p');
+
+    dogFact.innerText = dogFactsArray[k].fact;
+    document.getElementById('dogFactContainer').appendChild(dogFact);
 
 };
 
