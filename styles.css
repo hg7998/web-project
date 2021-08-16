@@ -102,6 +102,7 @@ html, body{ /*do not change*/
     position: relative;
     width: 100%;
     display: inline-flex;
+    font-size: 1.5vw;
 }
 
 #imageContainer {
@@ -134,6 +135,10 @@ img {
     margin-right: 5%;
     align-content: center;
     margin-left:auto;
+}
+
+#dogsOrCatsSubmit {
+    font-size: 1.5vw;
 }
 
 #dogsOrCatsQuestion {
