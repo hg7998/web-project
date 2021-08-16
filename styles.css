@@ -67,24 +67,8 @@ a {
     overflow:hidden;
 }
 
-iframe {
-    position: relative;
-    text-align:center;
-    font-size: 3vh;
-    width: 30%;
-    background-color:gray;
-    margin-left: auto;
-    border: 2px solid black;
-}
-
-video {
-    position: relative;
-    text-align:center;
-    font-size: 3vh;
-    width: 30%;
-    background-color:gray;
-    margin-left: auto;
-    border: 2px solid black;
+#video {
+    width: 100%;
 }
 
 #footer {
@@ -98,18 +82,10 @@ video {
     opacity: 0.8;
 }
 
-html, body{ /*do not change*/
+html, body { 
     height: 100vh;
     margin: 0;
     overflow:auto;
-}
-
-.fact-text {
-    background: yellow;
-    position: relative;
-    width: 50%;
-    display: block; 
-    /*justify-content:flex-start;*/
 }
 
 .container {
@@ -166,8 +142,6 @@ img {
 #dogsOrCatsSubmit {
     font-size: 1.5vh;
 }
-
-
 
 .otherPagesHeaderContainer {
     width: 100%;
@@ -263,11 +237,6 @@ img {
     align-content: flex-start;
 }
 
-#video {
-    width: 100%;
-}
-
-
 #doggif {
     background-image: url('https://media3.giphy.com/media/4Zo41lhzKt6iZ8xff9/giphy.gif?cid=790b761102db13303111a92ba6ca6f43c4c8f112c7775243&rid=giphy.gif&ct=g');
     background-size: 100% 100%;
@@ -283,15 +252,3 @@ img {
   #requiredField {
     font-size: 3vh;
   }
-
-
- /** {
-    overflow:auto; 
-} */
-
-/*
-html,body{
-    height: 100vh;
-  margin: 0;
-  overflow: visible;
-}
