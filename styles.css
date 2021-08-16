@@ -143,6 +143,7 @@ img {
     margin-left: 5%;
     height: 20%;
     align-content: center;
+    font-size: 3vh;
 }
 
 #questionContainer {
@@ -202,6 +203,7 @@ img {
     margin: auto;
     text-align: center;
     background-color: gray;
+    font-size: 3vh;
 }
 
 #dogPicturesContainer {
@@ -215,7 +217,6 @@ img {
 #dogFactOne {
     width: 20%;
     border: 2px solid black;
-    font-size: 100%;
 }
 
 #dogFactTwo {
