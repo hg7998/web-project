@@ -149,6 +149,7 @@ img {
 #dogsOrCatsSubmit {
     font-size: 2vh;
     text-align: center;
+    overflow: hidden;
 }
 
 .otherPagesHeaderContainer {
