@@ -1,9 +1,10 @@
 window.onload = function () {
 
-    let nameField = document.getElementById('name');
-    let factField = document.getElementById('fact');
+const factSubmitButton = document.getElementById("factSubmitButton");
+let nameField = document.getElementById('name');
+let factField = document.getElementById('fact');
 
-    document.getElementById('factSubmitButton').addEventListener('click', function (event) {
+    factSubmitButton.addEventListener('click', function (event) {
 
         if (nameField.value === '' || factField.value.trim().length === 0) {
             event.preventDefault();

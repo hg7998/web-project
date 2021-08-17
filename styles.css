@@ -139,8 +139,16 @@ img {
     margin-left: auto;
 }
 
+#dogsOrCatsSubmitContainer {
+    position: relative;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+
 #dogsOrCatsSubmit {
-    font-size: 1.5vh;
+    font-size: 2vh;
+    text-align: center;
 }
 
 .otherPagesHeaderContainer {
@@ -157,20 +165,26 @@ img {
 
 #dogButtonContainer {
     position: relative;
-    width: 5%;
-    height: 5%;
+    text-align: center;
     margin: auto;
     align-content: center;
 }
 
 #dogFactsAndPicturesButton {
-    height: 100%;
-    width: 100%;
     font-size: 2vh;
+    text-align: center;
+}
+
+#factSubmitButtonContainer {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    align-content: center;
 }
 
 #factSubmitButton {
     font-size: 2vh;
+    text-align: center;
 }
 
 #dogFactsContainer {

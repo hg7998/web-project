@@ -1,8 +1,12 @@
 let dogPictureUrl = "https://random.dog/woof.json";
 
-document.getElementById('dogFactsAndPicturesButton').addEventListener('click', function (event) {
+const dogFactsAndPicturesButton = document.getElementById("dogFactsAndPicturesButton");
+const dogPicturesContainer = document.getElementById("dogPicturesContainer");
 
-    let children = document.getElementById("dogPicturesContainer").children;
+
+dogFactsAndPicturesButton.addEventListener('click', function (event) {
+
+    let children = dogPicturesContainer.children;
     for (var i = 0; i < children.length; i++) {
         let dogFactNode = children[i];
 
